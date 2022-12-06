@@ -36,16 +36,22 @@ font-size: 45px;
     /* background: no-repeat; */
     background-size: cover;
     background-position: center;
+    background-color: #080808;
 }
 .container{
     padding: 10px 10%;
+   
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     /* font-family: 'Signika Negative', sans-serif; */
+}
+.navbar{
+    z-index: 99999;
 }
 nav ul li {
     display: inline-block;
@@ -285,6 +291,10 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
+.layer a{
+    /* font-size: 16px; */
+    color: #1e4ae7
+}
 .btn{
     display: block;
     margin: 50px auto;
@@ -373,7 +383,7 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 850px){
     #header{
         background-image: url(images/ash\ png-removebg12.png);
     }
@@ -481,18 +491,9 @@ body{
 .area{  
     background: -webkit-linear-gradient(to left, #2dde11, #14fc1c);  
     width: 100%;
-    height:100vh;
-    
+    /* height:100vh; */
+    margin-bottom: 50px;
    
-}
-
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
 
 .circles li{
@@ -612,7 +613,19 @@ body{
     animation-duration: 35s;
 }
 
-
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing:unset;
+    /* z-index: 0; */
+    margin-top: 75px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+}
 
 @keyframes animate {
 
