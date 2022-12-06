@@ -2,11 +2,11 @@ var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname){
-    for(tablink of  tablinks){
+    for(tablinks of  tablinks){
          tablink.classList.remove("active-link");
     }
 
-    for(tabcontent of  tabcontents){
+    for(tabcontents of  tabcontents){
         tabcontent.classList.remove("active-tab");
    }
    event.currentTarget.classList.add("active-link");
@@ -37,6 +37,6 @@ form.addEventListener('submit', e => {
     setTimeout(function(){
         msg.innerHTML = ""
     } ,5000);
-    form.reset()
+    form.reset
     .catch(error => console.error('Error!', error.message))
 })
