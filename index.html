@@ -8,32 +8,38 @@
     <title>personal portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a0c8555214.js" crossorigin="anonymous"></script>
-    <!-- <link href="animation.scss" rel="stylesheet/scss"> -->
-    <!-- <ui:include src="b.html" /> -->
 </head>
 
 <body>
+    <!-- ------------------------navbar-------------------------- -->
+
+    <section class="nav">
+    <nav class="navbar">
+        <div class="brand">
+            <span class="capital">P</span>
+            <span class="small">ortfolio</span>
+        </div>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+</section>
+
+
+<!-- ------------------------header----------------------------- -->
+
+
     <div id="header">
         <div class="container">
-            <nav class="navbar">
-                <div class="brand">
-                    <span class="capital">P</span>
-                    <span class="small">ortfolio</span>
-                </div>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            
             <div class="header-text">
                 <p>UI/UX || Frontend Web Developer</p>
-                <h1>Hi, I'm <span> Ashwin </span> <br> Yadav from Ghaziabad</h1>
+                <h1>Hi, I'm <span class="ash"> Ashwin </span> <br> Yadav from Ghaziabad </h1>
             </div>
     
         </div>
